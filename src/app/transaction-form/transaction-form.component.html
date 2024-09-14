@@ -1,0 +1,22 @@
+<form [formGroup]="transactionForm" (ngSubmit)="onSubmit()">
+    <label for="tradeID">Trade ID:</label>
+    <input id="tradeID" formControlName="tradeID" type="number" />
+  
+    <label for="version">Version:</label>
+    <input id="version" formControlName="version" type="number" />
+  
+    <label for="securityCode">Security Code:</label>
+    <input id="securityCode" formControlName="securityCode" type="text" />
+  
+    <label for="quantity">Quantity:</label>
+    <input id="quantity" formControlName="quantity" type="number" />
+  
+    <label for="action">Action:</label>
+    <input id="action" formControlName="action" type="text" />
+  
+    <label for="buySell">Buy/Sell:</label>
+    <input id="buySell" formControlName="buySell" type="text" />
+  
+    <button type="submit" [disabled]="!transactionForm.valid">Submit</button>
+  </form>
+  

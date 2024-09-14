@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Transaction History</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Trade ID</th>
+          <th>Version</th>
+          <th>Security Code</th>
+          <th>Quantity</th>
+          <th>Action</th>
+          <th>Buy/Sell</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let transaction of transactions">
+          <td>{{ transaction.tradeId }}</td>
+          <td>{{ transaction.version }}</td>
+          <td>{{ transaction.securityCode }}</td>
+          <td>{{ transaction.quantity }}</td>
+          <td>{{ transaction.action }}</td>
+          <td>{{ transaction.buySell }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

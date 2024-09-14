@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Current Positions</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Security Code</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let position of positions">
+          <td>{{ position.securityCode }}</td>
+          <td>{{ position.quantity }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
